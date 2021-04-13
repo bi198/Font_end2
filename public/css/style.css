@@ -4,7 +4,81 @@ body{
 
 }
 nav{
+    width: 500px;
+    height: 500px;
     position: fixed;
-    top: calc(-50% -150px);
+    top: -30%;
     right:0;
+    transform: translateX(250px) translateY(300px) 
+    /* scale(1.3) */
+    ;
+   
+}
+.side_shape_back{
+    width: 500px;
+    height: 500px;
+    fill: rgb(0 171 81);
+    position: absolute;
+    transform: scaleY(1.1);
+    top: 0;
+    right: 0;
+}
+.side_shape_font{
+    width: 500px;
+    height: 500px;
+    fill : #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+nav:hover{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: -30%;
+    right:0;
+    transform: translateX(170px) translateY(300px) scale(1.3);
+    transition: 1s;
+}
+nav:hover .side_shape_back{
+    width: 500px;
+    height: 500px;
+    fill: rgb(0 171 81);
+    position: absolute;
+    transform: scaleY(1.1);
+    top: 0;
+    right: 0;
+
+}
+nav:hover .side_shape_font{
+
+   width: 500px;
+    height: 500px;
+    fill : #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+nav ul{
+     position: absolute;
+     padding: 170px 190px;
+     list-style: none;
+     text-align: right;
+    /* top: 0;
+    right: -300px;  */
+}
+nav li{
+    padding: 5px;
+}
+nav a::before{
+    top: 150px;
+    right: 150px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid rgb(0 171 81) ; 
+    
 }
