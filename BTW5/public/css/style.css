@@ -1,0 +1,17 @@
+.main{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    perspective-origin: 500px;
+    border: solid black thin;
+
+}
+.plane::before{
+    content: "";
+    background: blue;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
